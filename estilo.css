@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contenedor_header{
+    height: 130px;
+    width: 100%;
+    background: linear-gradient(to left, #c2c2c2,#9b9b9b, #7c7c7c);
+    display: flex;
+    position: fixed;
+    top: 0.1px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.contenedor_header h1{
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenedor_header a{
+    font-size: 25px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 3px;
+}
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+#imgwspp{
+    width: 50px;
+}
+.presentacion img{
+    width: 100%;
+}
+.presentacion{
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+.presentacion p{
+    position: absolute;
+    width: 1500px;
+    font-size: 45px;
+    top: 55%;
+    left: 23%;
+    right: 25%;
+    backdrop-filter: blur(7px);
+    color: aliceblue;
+}
+.contenedor_header a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contenedor_seccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    height: auto;
+}
+/*BURRO DE ARRANQUE IMAGENES PARA VER Y NO VER*/
+
+.contenedor_seccion .imagen_burroarranque_2{
+    position: absolute;
+    left: 0.2%;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1.5s;
+}
+.contenedor_seccion .imagen_burroarranque_1{
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1.5s;
+}
+.imagenes:hover{
+    .imagen_burroarranque_2{
+        opacity: 1;
+    }
+    .imagen_burroarranque_1{
+        opacity: 0;
+    }
+}
+/*BURRO DE ARRANQUE IMAGENES PARA VER Y NO VER*/
+
+/*DISEÑO DE GALERIA PARA LOS LIMPIA PARABRISAS Y VENTILADORES*/
+.segunda_seccion{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#otraImagen{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+
+}
+.galeria_de_imagenes  img{
+    width: 100%;
+    cursor: pointer;
+}
+.galeria_de_imagenes{
+    position: relative;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    width: 800px;
+    height: 900px;
+    margin-right: 20%;
+}
+.galeria_de_imagenes img:hover{
+    border: 1px solid black;
+}
+/*DISEÑO DE GALERIA PARA LOS LIMPIA PARABRISAS Y VENTILADORES*/
+.texto_seccion{
+    width: 600px;
+    height: 400px;
+}
+#texto_seccionn{
+    margin-top: 6%;
+    width: 600px;
+    height: 400px;
+}
+.texto_seccion h2{
+    margin-bottom: 3px;
+}
+#texto_seccionn h2{
+    margin-bottom: 3px;
+}
+.texto_seccion p{
+    font-size: 30px;
+}
+#texto_seccionn p{
+    font-size: 30px;
+}
+
+.electrones_motores{
+    border:1px solid black;
+}
+.electrones_motores img{
+    width: 500px; 
+}
+.electrones_motores p{
+    font-size: 25px; 
+}
+#motores_monofasicos{
+    display: flex;
+    align-items: center;
+}
+#motores_trifasicos{
+    display: flex;
+    align-items: center;
+}
+#BombaCentrifuga{
+    display: flex;
+    align-items: center;
+}
+.texto_tm{
+    width: 900px;
+}
